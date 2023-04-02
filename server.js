@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 const port = 3000
-const server = require('http').createServer(app)
+const server = require('https').createServer(app)
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
