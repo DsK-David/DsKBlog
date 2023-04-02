@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new</title>
+</head>
+<style>
+    body{
+    background: #0a0c1d;
+    font-family: sans-serif;
+}
+.logo{
+    float: left;
+    color: #6e6b80;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.container{
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   position: absolute;
+   width: auto;
+   text-align: center;
+}
+input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 40px;
+  outline: 0;
+  padding: 4px 10px 0;
+  width: 100%;
+  margin: 10px;
+}
+textarea{
+    background: #303245;
+    padding: 10px;
+    width: 400px;
+    color: #eee;
+    outline: none;
+}
+button {
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  width: 95.02px;
+  height: 42.66px;
+  border: none;
+  background-color: #3653F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 170px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 720px) {
+   input{
+    width: 250px;
+   }
+   textarea{
+    width: 260px;
+   }
+   button{
+    margin-left: 110px;
+   }
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h3>DsKBlog</h3>
+
+        </div>
+    </header>
+    <section class="container">
+        <form action="/DsKBlog/data_blog" method="post">
+            <input type="text" class="username" id="username" name="username" placeholder="Username">
+            <input type="date" class="pub_date" id="pub-date" name="pub_date"><br>
+            <textarea name="body" id="" cols="30" rows="10"></textarea>
+            <br><button type="submit">publicar
+            </button>
+        </form>
+    </section>
+</body>
+<script>
+
+</script>
+</html>
